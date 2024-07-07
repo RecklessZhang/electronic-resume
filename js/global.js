@@ -1,6 +1,6 @@
 let projects = [
     {
-        id: 1,
+        id: '1',
         name: 'vueblogger-plus-sys',
         desc: '在vueblogger的基础上,增加了后台代码,移动终端控制,以及各种自定义组件,算是自己了解的技术栈的整合',
         link: 'https://blog.qnmdmyy.top',
@@ -15,10 +15,10 @@ let projects = [
         cover: 'https://cdn.jsdelivr.net/gh/RecklessZhang/vueblogger-plus-drawbed/vueblogger-plus/project/vueblogger-plus.png',
         screenShots: [
             './img/screenshots/vueblogger-plus-sys/img.png',
-            './img/screenshots/vueblogger-plus-sys/img.png1',
-            './img/screenshots/vueblogger-plus-sys/img.png2',
-            './img/screenshots/vueblogger-plus-sys/img.png3',
-            './img/screenshots/vueblogger-plus-sys/img.png4'
+            './img/screenshots/vueblogger-plus-sys/img_1.png',
+            './img/screenshots/vueblogger-plus-sys/img_2.png',
+            './img/screenshots/vueblogger-plus-sys/img_3.png',
+            './img/screenshots/vueblogger-plus-sys/img_4.png'
         ]
     }
 ]
@@ -43,7 +43,10 @@ function renderProjects() {
         let imgElement = document.createElement('img');
         imgElement.src = project.cover;
         let aElement = document.createElement('a');
-        aElement.href = 'project-detail.html?id=' + project.id;
+        aElement.href = 'project-detail.html';
+        aElement.addEventListener('click', function (e) {
+            sessionStorage.setItem('projectId', project.id)
+        })
         aElement.classList.add('ajax-page-load');
         divElement.append(imgElement, aElement);
 

@@ -34,8 +34,26 @@
 2. General Styles
 ------------------------------------------------------------ */
 
+/* 鼠标小手 */
 body, li, a, button, li:hover, a:hover, button:hover {
   cursor: url(https://upload.iydqy.com/braving/Style/cur/cursor.cur), default !important;
+}
+
+/* 禁止复制文本 */
+body {
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 1.0+ */
+  -ms-user-select: none; /* Internet Explorer 10+ */
+  user-select: none; /* 标准语法 */
+}
+
+/* 隐藏工具条 */
+section {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+section::-webkit-scrollbar {
+  display: none;
 }
 
 html {
