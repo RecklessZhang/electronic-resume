@@ -1,6 +1,6 @@
 /*
-* Template Name: BreezyCV 
-* ¸ü¶àÄ£°å£ºhttp://www.bootstrapmb.com/
+* Template Name: BreezyCV
+* ï¿½ï¿½ï¿½ï¿½Ä£ï¿½å£ºhttp://www.bootstrapmb.com/
 * Version: 1.2.0
 */
 
@@ -33,6 +33,11 @@
 /* ------------------------------------------------------------
 2. General Styles
 ------------------------------------------------------------ */
+
+body, li, a, button, li:hover, a:hover, button:hover {
+  cursor: url(https://upload.iydqy.com/braving/Style/cur/cursor.cur), default !important;
+}
+
 html {
   margin: 0;
   width: 100%;
@@ -209,11 +214,11 @@ input[type="submit"]:focus {
 
 
 
-/* ============================================================================= 
+/* =============================================================================
 3. Page loadig animation
 ============================================================================= */
 .no-js .preloader,
-.no-js .preloader-portfolio { 
+.no-js .preloader-portfolio {
   display: none;
 }
 .preloader,
@@ -245,7 +250,7 @@ input[type="submit"]:focus {
   margin: 100px auto;
   background-color: #09aeea;
 
-  border-radius: 100%;  
+  border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out;
 }
@@ -259,7 +264,7 @@ input[type="submit"]:focus {
 }
 
 @keyframes sk-scaleout {
-  0% { 
+  0% {
     -webkit-transform: scale(0);
     transform: scale(0);
   } 100% {
@@ -433,7 +438,7 @@ input[type="submit"]:focus {
   color: #fff;
   margin: 5px 0 7px;
   line-height: 1.2em;
-} 
+}
 
 .header-titles h4 {
   font-size: 18px;
@@ -865,31 +870,31 @@ textarea.form-control, textarea.form-control:focus {
 
 /* --- White Spaces --- */
 .white-space-10 {
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
 }
 
 .white-space-20 {
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
 }
 
 .white-space-30 {
-  padding-bottom: 30px; 
+  padding-bottom: 30px;
 }
 
 .white-space-40 {
-  padding-bottom: 40px; 
+  padding-bottom: 40px;
 }
 
 .white-space-50 {
-  padding-bottom: 50px; 
+  padding-bottom: 50px;
 }
 
 .white-space-60 {
-  padding-bottom: 60px; 
+  padding-bottom: 60px;
 }
 
 .white-space-70 {
-  padding-bottom: 70px; 
+  padding-bottom: 70px;
 }
 /* --- End White Spaces --- */
 
@@ -1245,10 +1250,10 @@ textarea.form-control, textarea.form-control:focus {
   margin-bottom: 30px;
 }
 
-.skills-info.skills-second-style h4 { 
+.skills-info.skills-second-style h4 {
   font-size: 13px;
   line-height: 1.1em;
-  position: relative; 
+  position: relative;
   float: left;
   margin: 0 0 4px;
 }
@@ -1295,6 +1300,37 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 /* --- Skills Values --- */
+.ten-percentage {
+  width: 10% !important;
+}
+.twenty-percentage {
+  width: 20% !important;
+}
+.thirty-percentage {
+  width: 30% !important;
+}
+.forty-percentage {
+  width: 40% !important;
+}
+.fifty-percentage {
+  width: 50% !important;
+}
+.sixty-percentage {
+  width: 60% !important;
+}
+.seventy-percentage {
+  width: 70% !important;
+}
+.eighty-percentage {
+  width: 80% !important;
+}
+.ninety-percentage {
+  width: 90% !important;
+}
+.hundred-percentage {
+  width: 100% !important;
+}
+
 .skills-second-style .skill-container.skill-1 .skill-percentage {
   width: 95%;
 }
@@ -2583,7 +2619,7 @@ blockquote {
 
 
 
-/* ============================================================================= 
+/* =============================================================================
 9. Pricing
 ============================================================================= */
 /* Pricing */
@@ -2707,7 +2743,7 @@ blockquote {
 
 
 
-/* ============================================================================= 
+/* =============================================================================
 10. Updates
 ============================================================================= */
 
