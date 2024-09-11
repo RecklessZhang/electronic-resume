@@ -119,8 +119,8 @@
 
           <!-- Arrows Nav -->
           <div class="lmpixels-arrows-nav">
-            <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
-            <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+            <div class="lmpixels-arrow-right" id="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+            <div class="lmpixels-arrow-left" id="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
           </div>
           <!-- End Arrows Nav -->
 
@@ -815,6 +815,24 @@
       for (let i = 0; i < imgs.length; i++) {
         var viewer = new Viewer(imgs[i]);
       }
+    </script>
+
+    <script type="text/javascript">
+      window.addEventListener(
+        "keydown",
+        function (event) {
+          if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+            var rightBtn = document.getElementById('lmpixels-arrow-right');
+            var clickEvent = new Event('click');
+            rightBtn.dispatchEvent(clickEvent);
+          }else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+            var leftBtn = document.getElementById('lmpixels-arrow-left');
+            var clickEvent = new Event('click');
+            leftBtn.dispatchEvent(clickEvent);
+          }
+        },
+        true,
+      );
     </script>
   </body>
 </html>
